@@ -8,6 +8,14 @@ $(document).ready(function () {
     var mapDataFetch = new Map();
     var megaMenu;
     var note;
+
+    var dataInizio = MCDatepicker.create({ 
+      el: '#data-inizio' 
+    });
+
+    var dataFine = MCDatepicker.create({ 
+      el: '#data-fine' 
+    });
     
     var grafico2d = document.getElementById('grafico2d').getContext('2d');
     var lineChart = lineChart = new Chart(grafico2d, {
